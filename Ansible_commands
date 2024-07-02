@@ -1,0 +1,12 @@
+To install ansible from repos:
+sudo dnf install epel-release
+sudo dnf install -y ansible
+ansible --version
+
+To instal from pip:(might be unstable):
+sudo dnf provides */pip (to find pip packages)
+sudo pip install ansible
+
+ping all managed nodes:
+ansible all -m ansible.builtin.ping
+
