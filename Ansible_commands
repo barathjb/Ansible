@@ -10,3 +10,14 @@ sudo pip install ansible
 ping all managed nodes:
 ansible all -m ansible.builtin.ping
 
+create user in all nodes:
+ansible -i inventory all -u student -b -k -K -m command -a "useradd ansible"
+-b become
+-k prompt for ssh password
+-K prompt sudo password
+
+check documentation:
+ansible-doc copy
+
+list all modules:
+ansible-doc -l
