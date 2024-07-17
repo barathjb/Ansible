@@ -22,3 +22,9 @@ ansible-doc copy
 
 list all modules:
 ansible-doc -l
+
+encrypt a file:
+ansible-vault encrypt filename
+
+view an encrypted file:
+ansible-vault view filename
