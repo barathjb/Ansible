@@ -1,2 +1,18 @@
 training repo:
 git clone https://github.com/sandervanvugt/ansiblefundamentals
+
+hosts file and vars:
+segregate hosts by groups and set vars for groups like below
+
+[dev]
+some ips
+[prod]
+some ips
+
+[dev:vars]
+user=ansdev
+ssh_pass=pass
+[prod:vars]
+user=ansprod
+ssh_pass=pass
+
